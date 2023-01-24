@@ -1,48 +1,84 @@
+@font-face {
+  font-family: "montserrat";
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+
 body {
-  background-image: url("../assets/station.jpg");
-  background-size: cover;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #e0e2db;
+  font-family: "montserrat";
   font-weight: bold;
-  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
 
-h2 {
-  font-size: 50px;
+#count-el {
+  font-size: 4rem;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  width: 20%;
+  border: 2px dotted white;
+  text-align: center;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
 }
 
 button {
   border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-size: 1.3rem;
+  padding: 1rem;
   color: white;
   font-weight: bold;
   width: 200px;
-  margin-bottom: 5px;
-  border-radius: 5px;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+#button-add-sub {
+  display: flex;
+  justify-content: center;
 }
 
 #increment-btn {
-  background: darkred;
+  background: #118ab2;
+}
+
+#decrease-btn {
+  background: #ffd166;
 }
 
 #save-btn {
-  background: darkgreen;
+  background: #2a9d8f;
 }
 
 #save-el {
   margin: 0 auto;
-  max-width: 10%;
+  max-width: 20%;
   flex-wrap: wrap;
+  font-size: 1.3rem;
+  color: #22333b;
 }
 
 #reset-btn {
   margin-top: 2rem;
+  background: #8d99ae;
+}
+
+button:hover {
+  transition: all 0.1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }

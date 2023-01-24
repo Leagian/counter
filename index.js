@@ -7,12 +7,18 @@ function increment() {
   countEl.textContent = count;
 }
 
+function decrease() {
+  count -= 1;
+  countEl.textContent = count;
+}
+
 function save() {
-  let countStr = count + " - ";
+  let countStr = count + " / ";
   saveEl.textContent += countStr;
 }
 
 function reset() {
+  count = 0;
   countEl.textContent = 0;
   saveEl.textContent = "";
 }
